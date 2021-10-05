@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  //   height: 100vh;
+  //   text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  //   line-height: 1;
+}
+
+section,
+main,
+footer {
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+form > * {
+  display: block;
+  margin: 10px 0px;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+
+  > *.full {
+    flex: 1;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.row {
+    flex-direction: row;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.align-center {
+    align-items: center;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+}
+
+.clean-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fa-star {
+  margin-right: 0.2rem;
+  color: transparent;
+  &.filled {
+    color: gold;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}

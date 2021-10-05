@@ -1,9 +1,16 @@
-import './App.css';
+import './styles/App.scss';
+import TopBar from './components/TopBar';
+import SideBar from './components/SideBar';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      ADMIN DASHBOARD
+      <TopBar />
+      <div className="container flex">
+        <SideBar />
+        <Home />
+      </div>
     </div>
   );
 }

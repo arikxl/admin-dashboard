@@ -1,0 +1,15 @@
+.container{
+    margin-top: 10px;
+}
+
+// Setup
+@import "./setup/helpers.scss";
+
+// Components
+@import "./comp/top-bar";
+@import "./comp/side-bar";
+@import "./comp/featured-info";
+@import "./comp/chart";
+
+// Pages
+@import "./pages/home";
