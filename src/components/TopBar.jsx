@@ -1,12 +1,15 @@
 import React from 'react';
-import {NotificationsNone, Language, Settings} from '@material-ui/icons';
+import { NotificationsNone, Language, Settings } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 const TopBar = () => {
     return (
         <div className="topbar">
             <div className="topbar-wrapper flex space-between align-center">
                 <div className="top-left flex">
-                    <span className="logo">inertia⚡admin</span>
+                    <Link to="/">
+                        <span className="logo">inertia⚡admin</span>
+                    </Link>
                 </div>
                 <div className="top-right flex align-center">
                     <div className="topbar-icon-container">

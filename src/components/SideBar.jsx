@@ -4,6 +4,7 @@ import {
     PermIdentity, Storefront, AttachMoney, BarChart, MailOutline,
     DynamicFeed, ChatBubbleOutline
 } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 const SideBar = () => {
     return (
@@ -27,7 +28,9 @@ const SideBar = () => {
                     <h3 className="sidebar-title">Quick Menu</h3>
                     <ul className="sidebar-list clean-list">
                         <li className="sidebar-list-item flex align-center">
-                            <PermIdentity className="sidebar-icon" /> Users
+                            <Link to="/users">
+                                <PermIdentity className="sidebar-icon" /> Users
+                            </Link>
                         </li>
                         <li className="sidebar-list-item flex align-center">
                             <Storefront className="sidebar-icon" /> Products
