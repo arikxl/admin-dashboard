@@ -1,0 +1,46 @@
+.widget-small {
+  flex: 1;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  margin-right: 20px;
+
+  .widget-sm-title {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .widget-sm-list {
+
+    .widget-sm-item {
+      margin: 20px 0;
+
+      .widget-sm-username {
+        font-weight: 600;
+      }
+
+      .widget-sm-user-title {
+        font-weight: 300;
+      }
+
+      .widget-sm-img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .widget-sm-btn {
+        border: none;
+        border-radius: 10px;
+        padding: 7px 10px;
+        background-color: #eeeef7;
+        color: #555;
+
+        .widget-sm-icon{
+            font-size: 16px;
+            margin-right: 5px;
+        }
+      }
+    }
+  }
+}
