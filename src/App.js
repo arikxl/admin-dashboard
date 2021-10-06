@@ -31,6 +31,12 @@ function App() {
           <Route path="/products">
             <ProductsList />
           </Route>
+          <Route path="/product/:productId">
+            <User />
+          </Route>
+          <Route path="/newProduct">
+            <NewUser />
+          </Route>
         </Switch>
       </div>
     </Router>
