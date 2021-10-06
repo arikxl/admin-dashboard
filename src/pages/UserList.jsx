@@ -45,11 +45,11 @@ const UserList = () => {
             renderCell: (params) => {
                 return (
                     <>
-                        <Link to={"/user/"+params.row.id}>
+                        <Link to={"/user/" + params.row.id}>
                             <button className="user-list-edit">Edit</button>
                         </Link>
                         <DeleteOutline className="user-list-delete"
-                        onClick={() => handleDelete(params.row.id)} />
+                            onClick={() => handleDelete(params.row.id)} />
                     </>
                 )
             }
@@ -59,15 +59,23 @@ const UserList = () => {
 
 
     return (
-        <div className="user-list">
-            <DataGrid
-                rows={data}
-                columns={columns}
-                pageSize={10}
-                checkboxSelection
-                disableSelectionOnClick
-            />
-        </div>
+        // <div className="flex column testt">
+            // <div className="user-title-container flex align-center space-between ">
+            //     <h1 className="user-title">Edit User</h1>
+            //     <Link to="/newUser">
+            //         <button className="user-add-btn">Create</button>
+            //     </Link>
+            // </div>
+            <div className="user-list">
+                <DataGrid
+                    rows={data}
+                    columns={columns}
+                    pageSize={10}
+                    checkboxSelection
+                    disableSelectionOnClick
+                />
+            </div>
+        // </div>
     )
 }
 

@@ -27,14 +27,17 @@ const SideBar = () => {
                 <div className="sidebar-menu">
                     <h3 className="sidebar-title">Quick Menu</h3>
                     <ul className="sidebar-list clean-list">
-                        <li className="sidebar-list-item flex align-center">
-                            <Link to="/users">
+                        <Link to="/users">
+                            <li className="sidebar-list-item flex align-center">
                                 <PermIdentity className="sidebar-icon" /> Users
-                            </Link>
-                        </li>
-                        <li className="sidebar-list-item flex align-center">
-                            <Storefront className="sidebar-icon" /> Products
-                        </li>
+                            </li>
+                        </Link>
+                        <Link to="/products">
+                            <li className="sidebar-list-item flex align-center">
+                                <Storefront className="sidebar-icon" /> Products
+                            </li>
+                        </Link>
+
                         <li className="sidebar-list-item flex align-center">
                             <AttachMoney className="sidebar-icon" /> Transactions
                         </li>

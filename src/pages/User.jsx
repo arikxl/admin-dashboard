@@ -1,12 +1,15 @@
 import React from 'react';
 import { PermIdentity, CalendarToday, PhoneAndroid, MailOutline, LocationSearching, Publish } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 const User = () => {
     return (
         <div className="user-container">
             <div className="user-title-container flex align-center space-between">
                 <h1 className="user-title">Edit User</h1>
-                <button className="user-add-btn">Create</button>
+                <Link to="/newUser">
+                    <button className="user-add-btn">Create</button>
+                </Link>
             </div>
             <div className="user-info-container flex">
                 <div className="user-display">
@@ -82,8 +85,8 @@ const User = () => {
                         <div className="user-update-right flex column space-between">
                             <div className="user-update-upload flex align-center">
                                 <img src="https://cdn.pixabay.com/photo/2017/08/31/09/01/woman-2699801_1280.jpg" alt="" className="user-display-img" alt="" />
-                                <label htmlFor="file"><Publish classname="user-update-icon"/></label>
-                                <input type="file" id="file" style={{display: "none"}} />
+                                <label htmlFor="file"><Publish className="user-update-icon" /></label>
+                                <input type="file" id="file" style={{ display: "none" }} />
                             </div>
                             <button className="user-update-btn">Update</button>
                         </div>

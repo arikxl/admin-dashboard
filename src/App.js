@@ -6,6 +6,8 @@ import SideBar from './components/SideBar';
 import Home from './pages/Home';
 import UserList from './pages/UserList';
 import User from './pages/User';
+import NewUser from './pages/NewUser';
+import ProductsList from './pages/ProductsList';
 
 function App() {
   return (
@@ -22,6 +24,12 @@ function App() {
           </Route>
           <Route path="/user/:userId">
             <User />
+          </Route>
+          <Route path="/newUser">
+            <NewUser />
+          </Route>
+          <Route path="/products">
+            <ProductsList />
           </Route>
         </Switch>
       </div>
