@@ -11,8 +11,9 @@ const Product = () => {
         <div className="product-container">
             <div className="product-title-container flex align-center space-between">
                 <h1 className="product-title">Product</h1>
-                <Link to="/newProduct"></Link>
-                <button className="product-add-btn">Create</button>
+                <Link to="/newProduct">
+                    <button className="product-add-btn">Create</button>
+                </Link>
             </div>
 
             <div className="product-top flex">
@@ -45,8 +46,8 @@ const Product = () => {
                 </div>
             </div>
             <div className="product-bottom">
-                <form className="product-form">
-                    <div className="product-form-left">
+                <form className="product-form flex space-between">
+                    <div className="product-form-left flex column">
                         <label >Product Name</label>
                         <input type="text" placeholder="Apple Airpods" />
                         <label >in Stock</label>
@@ -60,8 +61,8 @@ const Product = () => {
                             <option value="no">No</option>
                         </select>
                     </div>
-                    <div className="product-form-right">
-                        <div className="product-upload">
+                    <div className="product-form-right flex space-around column">
+                        <div className="product-upload flex align-center">
                             <img src="https://images.pexels.com/photos/7156886/pexels-photo-7156886.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="product-upload-img" />
                             <label for="file"><Publish /></label>
                             <input type="file" id="file" style={{ display: "none" }} />

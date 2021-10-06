@@ -13,9 +13,11 @@ const SideBar = () => {
                 <div className="sidebar-menu">
                     <h3 className="sidebar-title">Dashboard</h3>
                     <ul className="sidebar-list clean-list">
+                    <Link to="/">
                         <li className="sidebar-list-item flex align-center active">
                             <LineStyle className="sidebar-icon" /> Home
                         </li>
+                        </Link>
                         <li className="sidebar-list-item flex align-center">
                             <Timeline className="sidebar-icon" /> Analytics
                         </li>
