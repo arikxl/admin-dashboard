@@ -1,12 +1,14 @@
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './styles/App.scss';
+import Home from './pages/Home';
+import User from './pages/User';
 import TopBar from './components/TopBar';
 import SideBar from './components/SideBar';
-import Home from './pages/Home';
-import UserList from './pages/UserList';
-import User from './pages/User';
 import NewUser from './pages/NewUser';
+import Product from './pages/Product';
+import UserList from './pages/UserList';
+import NewProduct from './pages/newProduct';
 import ProductsList from './pages/ProductsList';
 
 function App() {
@@ -32,10 +34,10 @@ function App() {
             <ProductsList />
           </Route>
           <Route path="/product/:productId">
-            <User />
+            <Product />
           </Route>
           <Route path="/newProduct">
-            <NewUser />
+            <NewProduct />
           </Route>
         </Switch>
       </div>
